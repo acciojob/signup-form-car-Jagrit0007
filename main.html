@@ -8,6 +8,43 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" placeholder="Name" required>
+		<br>
+		<label for="email">Email</label>
+		<input type="Email" id="email" placeholder="Email" required>
+		<br>
+		<label for="gender_m">Male</label>
+        <input type="radio" id="gender_m" name="gender" value="male" placeholder="Please choose an option" required>
+       <label for="gender_f">Female</label>
+       <input type="radio" id="gender_f" name="gender" value="female" placeholder="Please choose an option" required>
+       <br> <label for="car-brands">Car Brands</label>
+  <select id="car-brands" name="carBrands" required>
+    <option value="" disabled selected>--Please choose an option--</option>
+    <option value="toyota">Toyota</option>
+    <option value="honda">Honda</option>
+    <option value="ford">Ford</option>
+    <!-- Add more options as needed -->
+ </select><br>
+		<label for="age">Age</label>
+<input type="number" id="age" name="age" placeholder="Enter your age" min="0" required><br>
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" name="dob" required>
+		<br>
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+<br>
+		<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+<br>
+		<label>
+    <input type="checkbox" name="tos" required>
+    I agree to the Terms of Service
+</label>
+
+
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
